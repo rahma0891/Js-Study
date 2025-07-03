@@ -227,7 +227,7 @@ console.log(x);
 let r = 2 + "1"; // operasi ini akan menghasilkan penggabungan dua elemen seharusnya :
 console.log(r);
 r = 2 + parseInt("1"); //jika terdapat kombinasi operasi number dan string hrs menggunakan parse, sehingga operasi aritmatik dpt terjadi.
-console.log(r);*/
+console.log(r);
 
 //EPISODE 14 OPERASI LOGIKA
 // && = and
@@ -317,3 +317,65 @@ console.log(`10 != 10 hasilnya = ${10 != 10}`);
 
 console.log(`10 !== "10" hasilnya = ${10 !== "10"}`);
 console.log(`10 !== 10 hasilnya = ${10 !== 10}`);
+
+// EPISODE 17 - IF STATEMENT ( PERCABANGAN)
+
+//1. if
+//2. else
+//3. else if
+
+//1. if
+let nilai = 50;
+console.log("nilai kamu adalah " + nilai);
+if (nilai > 80) {
+  console.log("nilai kamu adalah " + nilai + " Grade A");
+} else if (nilai > 70) {
+  //else
+  console.log("nilai kamu adalah " + nilai + " Grade B");
+} else if (nilai > 60) {
+  //else if
+  console.log("nilai kamu adalah " + nilai + " Grade C");
+} else {
+  console.log("nilai kamu adalah " + nilai + " Grade D");
+}
+
+//EPISODE 18 : alert, prompt dan confirm
+
+//1. alert
+alert("Halo namaku rahma");
+//2. prompt
+let nama = prompt("siapa namamu?");
+console.log(nama);
+//3. confirm
+let konfirmasi = confirm("apakah kamu yakin?");
+console.log(konfirmasi);
+//gabungan
+let login = confirm("Are you Sure?");
+if (login) {
+  let name = prompt("Whats Your Name?");
+  alert(`Hallo, Welcome ${name}`);
+} else {
+  alert("Sorry, Leave Please");
+}*/
+
+// EPISODE 19 : SWITCH STATEMENT
+
+//1. switch
+//2. case
+//3. default
+
+let grade = "C";
+switch (grade) {
+  case "A":
+    console.log("Best");
+    break;
+  case "B":
+    console.log("Good");
+    break;
+  case "C":
+    console.log("Enough");
+    break;
+  default:
+    console.log("Bad");
+    break;
+}
